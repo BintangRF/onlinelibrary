@@ -1,0 +1,52 @@
+* {
+  font-family: "Work Sans", sans-serif;
+}
+
+/* Main */
+form.search-form {
+  width: 50vw;
+}
+@media (max-width: 576px) {
+  form.search-form {
+    width: 75vw;
+  }
+}
+
+/* section book */
+.truncated-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: auto;
+}
+
+.owl-nav > button.owl-prev {
+  left: 0;
+}
+
+.owl-nav > button.owl-next {
+  right: 0;
+}
+
+.owl-nav > button {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  background: #f8f1f17b !important;
+  backdrop-filter: blur;
+  border-radius: 10px;
+  opacity: 0.5;
+}
+
+.owl-nav button span {
+  font-size: 70px;
+  position: relative;
+  top: -10px;
+  margin: 0em 0.2em;
+}
+
+.owl-nav > button:hover {
+  opacity: 1;
+}
+
+/* End main */

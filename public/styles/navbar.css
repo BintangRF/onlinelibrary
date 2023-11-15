@@ -1,0 +1,136 @@
+/* Navbar */
+* {
+  font-family: "Work Sans", sans-serif;
+}
+
+#offcanvasNavbar {
+  background-color: #ffa72be6;
+}
+
+a.navbar-brand,
+div.offcanvas-body ul li a,
+div.secondNavbar ul li a {
+  color: var(--backgroundColor);
+  font-weight: bold;
+  position: relative;
+  text-decoration: none;
+}
+
+div.offcanvas-body ul li a:hover,
+div.secondNavbar ul li a:hover {
+  color: var(--quertiaryColor);
+}
+
+div.offcanvas-body ul li a::before,
+div.secondNavbar ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--quertiaryColor);
+  transition: width 0.3s ease-in-out;
+}
+
+div.offcanvas-body ul li a:hover::before,
+div.secondNavbar ul li a:hover::before {
+  color: var(--quertiaryColor);
+  width: 100%;
+}
+
+ul.second-navbar-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+nav.firstNavbar {
+  background-color: var(--primaryColor);
+}
+
+nav.secondNavbar {
+  background-color: var(--secondaryColor);
+}
+
+.navbar > .container {
+  display: flex;
+  justify-content: center;
+}
+
+button.btn-navbar-login {
+  border: 1px solid var(--backgroundColor);
+  padding: 0.5em 2em;
+}
+
+button.btn-navbar-login a {
+  color: var(--backgroundColor);
+}
+
+button.btn-navbar-login:hover {
+  border: 1px solid var(--quertiaryColor);
+  padding: 0.5em 2em;
+}
+
+button.btn-navbar-login:hover a {
+  color: var(--quertiaryColor);
+}
+
+button.btn-navbar-register {
+  padding: 0.5em 1.5em;
+  background-color: var(--backgroundColor);
+}
+
+button.btn-navbar-register a {
+  color: var(--primaryColor);
+}
+
+button.btn-navbar-register:hover {
+  padding: 0.5em 1.5em;
+  background-color: var(--quertiaryColor);
+  color: var(--backgroundColor);
+}
+
+button.btn-navbar-register:hover a {
+  color: var(--backgroundColor);
+}
+
+.poto_profile {
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile-menu {
+  position: relative;
+}
+
+.dropbtn {
+  background-color: transparent;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 0px;
+  top: -20px;
+  border-radius: 100px;
+  width: 2.5em;
+  height: 2.5em;
+}
+
+.bi-circle-fill::before {
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  font-size: 2.5em;
+  opacity: 0;
+}

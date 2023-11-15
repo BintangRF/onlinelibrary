@@ -1,0 +1,62 @@
+:root {
+  --primaryColor: #ffa62b;
+  --secondaryColor: #db6400;
+  --tertiaryColor: #fef9a7;
+  --quertiaryColor: #d61c4e;
+  --backgroundColor: #f8f1f1;
+  --fontColor: #343a40;
+}
+
+* {
+  font-family: "Work Sans", sans-serif;
+}
+
+button.btn-first {
+  background-color: var(--quertiaryColor);
+  color: var(--backgroundColor);
+}
+
+button.btn-first:hover {
+  background-color: var(--quertiaryColor);
+  color: var(--backgroundColor);
+}
+
+button.btn-second {
+  color: var(--quertiaryColor);
+  border: 1px solid var(--quertiaryColor);
+}
+
+button.btn-second.bookmarked {
+  color: var(--backgroundColor);
+  background-color: var(--quertiaryColor);
+}
+
+button.btn-second #bookmarkedIcon {
+  display: none;
+}
+
+button.btn-second.bookmarked #bookmarkIcon {
+  display: none;
+}
+
+button.btn-second.bookmarked #bookmarkedIcon {
+  display: block;
+}
+
+button.btn-second #bookmarkIcon.bookmarked {
+  display: none;
+}
+
+button.btn-second #bookmarkedIcon.bookmarked {
+  display: none;
+}
+
+button.btn-second:hover {
+  color: var(--quertiaryColor);
+  border: 1px solid var(--quertiaryColor);
+}
+
+button.btn-second.bookmarked:hover {
+  color: var(--backgroundColor);
+  background-color: var(--quertiaryColor);
+}
